@@ -1,0 +1,79 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+.Numbers{
+    display: flex;
+}
+.Numbers div{
+    border: thin solid black;
+    border-radius: 6px;
+    margin: 4px;
+    background-color: #2E2D4D;
+    color: #ebebeb;
+}
+
+#remainingNumbers div{
+    background-color: #7D80DA;
+    font-size: xx-large;
+}
+
+.Numbers div p{
+    margin: 4px;
+}
+
+.prize{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20%;
+    font-size: x-large;
+}
+
+.prize > p{
+    background-color: #C52233;
+    color: white;
+    padding: 0 12px;
+    border-radius: 15%;
+}
+
+#remainingNumbers{
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: Righteous, cursive;
+    letter-spacing: 5px;
+    background-color: #337357;
+    color: white;
+    margin-top: 0;
+    padding-top: 0.67em;
+    padding-bottom: 0.4em;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+body{
+    background-color: #ebebeb;
+    font-family: sans-serif;
+    border-bottom: 47px solid #337357;
+}
+
+button{
+    border-radius: 4px;
+    /* border: 2px outset white; */
+    background-color: white;
+    /* color: white; */
+    font-family: sans-serif;
+    font-size: large;
+}
