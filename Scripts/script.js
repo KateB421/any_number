@@ -1,10 +1,18 @@
 const remainingNumbers=document.querySelectorAll('#remainingNumbers div');
 let priceNumbers=document.querySelectorAll('.prize div div:not(.static)');
 const restartButton=document.querySelector('#restart');
-let prizes=[[],[],[]];
-let anArray=[0,1,2,3,4,5,6,7,8,9];
+
+function restartGame(anArray, anotherArray){
+    for (let i of anArray){
+        i.innerHTML="<p>_</p>";
+    }
+    for (let i of anotherArray){
+        i.className="";
+    }
+}
+
 for (let i of remainingNumbers){
-    i.addEventListener("click", function(event){
+    i.addEventListener("click", function(){
         if(i.className=="clicked"){
             alert("That number has already selected. Please choose a new number.")
         }
@@ -22,4 +30,6 @@ for (let i of remainingNumbers){
     })
 }
 
-// console.log(priceNumbers);
+restartButton.addEventListener("click", function(){
+    restartGame(priceNumbers,remainingNumbers);
+})

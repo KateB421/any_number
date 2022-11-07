@@ -1,6 +1,7 @@
 body, html{
     margin: 0;
     padding: 0;
+    cursor: default;
 }
 
 .Numbers{
@@ -17,6 +18,7 @@ body, html{
 #remainingNumbers div{
     background-color: #7D80DA;
     font-size: xx-large;
+    cursor: pointer;
 }
 
 .Numbers div p{
@@ -76,6 +78,10 @@ button{
     /* color: white; */
     font-family: sans-serif;
     font-size: large;
+}
+
+button:hover{
+    background-color: #ebebeb;
 }
 
 .clicked{
