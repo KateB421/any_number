@@ -1,6 +1,9 @@
 const remainingNumbers=document.querySelectorAll('#remainingNumbers div');
 let priceNumbers=document.querySelectorAll('.prize div div:not(.static)');
 const restartButton=document.querySelector('#restart');
+let carPrice=document.querySelectorAll('#carPrice div');
+let randomPrice=document.querySelectorAll('#prizePrice');
+let cashPrice=document.querySelectorAll('#cashPrice')
 
 function restartGame(anArray, anotherArray){
     for (let i of anArray){
@@ -9,6 +12,16 @@ function restartGame(anArray, anotherArray){
     for (let i of anotherArray){
         i.className="";
     }
+}
+
+function checkForWin(x){
+    let numbersLeftCount=0;
+    for(let i of x){
+        if (i.innerText=="_"){
+            numbersLeftCount+=1;
+        }
+    }
+    return (numbersLeftCount==0);
 }
 
 for (let i of remainingNumbers){
